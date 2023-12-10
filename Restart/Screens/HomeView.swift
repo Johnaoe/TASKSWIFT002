@@ -22,7 +22,6 @@ struct HomeView: View {
                 isOnboardingViewActive = true
             }){
                 Text("Restart")
-                Text("test")
             }
         }
     }
