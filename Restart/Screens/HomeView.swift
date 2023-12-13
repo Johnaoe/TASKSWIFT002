@@ -11,10 +11,11 @@ struct HomeView: View {
 //    MARK: - PROPERTY
     
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
+    @State private var isAnimated : Bool = false
     
 //    MARK: - BODY
     var body: some View {
-        VStack (spacing: 20) {
+        VStack(spacing: 20) {
             
             // MARK: HEADER
             Spacer()
@@ -25,7 +26,15 @@ struct HomeView: View {
                     .resizable()
                     .scaledToFit()
                 .padding()
+                .offset(y: isAnimated ? 35 : -35)
+                .animation(
+                    Animation
+                        .easeInOut(duration: 4)
+                        .repeatForever(),
+                    value: isAnimated
+                )
             }
+
             
             // MARK: CENTER
             
@@ -35,6 +44,7 @@ struct HomeView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .padding()
+
             
             // MARK: FOOTER
             Spacer()
@@ -42,7 +52,9 @@ struct HomeView: View {
             
             
             Button(action: {
-                isOnboardingViewActive = true
+                withAnimation{
+                    isOnboardingViewActive = true
+                }
             }){
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                     .imageScale(.large)
@@ -54,7 +66,14 @@ struct HomeView: View {
             .buttonBorderShape(.capsule)
             .controlSize(.large)
         }
+        .onAppear(perform: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute:{
+                isAnimated = true
+            })
+        })
+
     }
+    
 
 }
 struct HomeView_Previews: PreviewProvider {
