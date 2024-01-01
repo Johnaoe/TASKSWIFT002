@@ -13,6 +13,7 @@
 		6C702FB22B25E27D0042357D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C702FB12B25E27D0042357D /* Preview Assets.xcassets */; };
 		6C702FBA2B25E3580042357D /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C702FB82B25E3580042357D /* chimeup.mp3 */; };
 		6C702FBB2B25E3580042357D /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6C702FB92B25E3580042357D /* success.m4a */; };
+		6CCDCE032B4362750018C79C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCDCE022B4362750018C79C /* AudioPlayer.swift */; };
 		6CFF410D2B25E7870045AA9C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF410C2B25E7870045AA9C /* OnboardingView.swift */; };
 		6CFF410F2B25E7A50045AA9C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF410E2B25E7A50045AA9C /* HomeView.swift */; };
 		6CFF41112B28E87E0045AA9C /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF41102B28E87E0045AA9C /* CircleGroupView.swift */; };
@@ -27,6 +28,7 @@
 		6C702FB82B25E3580042357D /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		6C702FB92B25E3580042357D /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 		6C702FC12B25E6620042357D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6CCDCE022B4362750018C79C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		6CFF410C2B25E7870045AA9C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		6CFF410E2B25E7A50045AA9C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6CFF41102B28E87E0045AA9C /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		6C702FC02B25E4B00042357D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6CCDCE022B4362750018C79C /* AudioPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				6CFF410F2B25E7A50045AA9C /* HomeView.swift in Sources */,
 				6C702FAD2B25E27C0042357D /* ContentView.swift in Sources */,
 				6C702FAB2B25E27C0042357D /* RestartApp.swift in Sources */,
+				6CCDCE032B4362750018C79C /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
